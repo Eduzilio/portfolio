@@ -2,8 +2,8 @@ import { Link } from "react-router";
 import { motion } from "motion/react";
 import svgPaths from "../../imports/svg-06qu19s9uc";
 import { cases } from "../data/cases";
-import imgDefault from "figma:asset/f9353f8aa816a22361946d8f1b96277a66afbcf8.png";
-import imgHover from "figma:asset/d506bc31082382879c40043bc25b5d5cb16afc03.png";
+import gridDefaultImage from "../../assets/f9353f8aa816a22361946d8f1b96277a66afbcf8.png";
+import gridHoverImage from "../../assets/d506bc31082382879c40043bc25b5d5cb16afc03.png";
 
 interface ProjectCardProps {
   id: string;
@@ -41,7 +41,7 @@ function ProjectCard({ id, title, company, size, hasImage }: ProjectCardProps) {
             {/* Imagem default (linhas) - sempre visível, desaparece no hover */}
             <div className="absolute inset-x-0 top-0 opacity-60 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none">
               <img 
-                src={imgDefault} 
+                src={gridDefaultImage}
                 alt="" 
                 className="w-full h-auto object-cover object-top"
               />
@@ -50,7 +50,7 @@ function ProjectCard({ id, title, company, size, hasImage }: ProjectCardProps) {
             {/* Imagem hover (colorida) - aparece no hover */}
             <div className="absolute inset-x-0 top-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
               <img 
-                src={imgHover} 
+                src={gridHoverImage}
                 alt="" 
                 className="w-full h-auto object-cover object-top"
               />

@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import svgPaths from "../../imports/svg-tjvdcu65zc";
-import imgBgClientes from "figma:asset/011a40225988e78f567a52ec9f1453d345366db1.png";
+import companiesBackground from "../../assets/011a40225988e78f567a52ec9f1453d345366db1.png";
 
 // Logo Components from Figma - Equalized sizes
 function LogoMidway() {
@@ -144,7 +144,7 @@ export function CompaniesSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={imgBgClientes}
+          src={companiesBackground}
           alt=""
           className="w-full h-full object-cover opacity-100"
         />

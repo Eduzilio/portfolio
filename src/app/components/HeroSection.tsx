@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import svgPaths from "../../imports/svg-l9301e7yl1";
-import imgBackground from "figma:asset/e7bfdf09417b2dcf5e75af6d0f6f019b7b3eea8d.png";
+import heroImage from "../../assets/e7bfdf09417b2dcf5e75af6d0f6f019b7b3eea8d.png";
 
 const rotatingPhrases = [
   { first: "fluxos em", last: "experiências" },
@@ -45,7 +45,7 @@ export function HeroSection() {
           style={{ y: imageY, scale: imageScale }}
         >
           <img
-            src={imgBackground}
+            src={heroImage}
             alt=""
             className="w-full h-full object-contain object-center"
           />
@@ -124,7 +124,7 @@ export function HeroSection() {
       {/* Mobile background image overlay */}
       <div className="lg:hidden absolute inset-0 opacity-20">
         <img
-          src={imgBackground}
+          src={heroImage}
           alt=""
           className="w-full h-full object-cover object-center"
         />
