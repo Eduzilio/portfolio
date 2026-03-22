@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import svgPaths from "../../imports/svg-tjvdcu65zc";
-import companiesBackground from "/images/companies-bg.png";
+const companiesBackground = "/images/companies-bg.png";
 
 // Logo Components from Figma - Equalized sizes
 function LogoMidway() {

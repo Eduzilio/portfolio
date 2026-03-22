@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
 import svgPaths from "../../imports/svg-06qu19s9uc";
 import { cases } from "../data/cases";
-import gridDefaultImage from "/images/estore-default.png";
-import gridHoverImage from "/images/estore-hover.png";
-import gridDefaultImage2 from "/images/riachueloplus-default.png";
-import gridHoverImage2 from "/images/riachueloplus-hover.png";
-import gridDefaultImage3 from "/images/beacklock-default.png";
-import gridHoverImage3 from "/images/beacklock-hover.png";
-import gridDefaultImage4 from "/images/neoenergia-default.png";
-import gridHoverImage4 from "/images/neoenergia-hover.png";
+const gridDefaultImage = "/images/estore-default.png";
+const gridHoverImage = "/images/estore-hover.png";
+const gridDefaultImage2 = "/images/riachueloplus-default.png";
+const gridHoverImage2 = "/images/riachueloplus-hover.png";
+const gridDefaultImage3 = "/images/neoenergia-default.png";
+const gridHoverImage3 = "/images/neoenergia-hover.png";
+const gridDefaultImage4 = "/images/beacklock-default.png";
+const gridHoverImage4 = "/images/beacklock-hover.png";
 
 interface ProjectCardProps {
   id: string;
@@ -133,10 +133,10 @@ export function ProjectsGrid() {
   // Mapear os cases existentes para o grid - 7 projetos para grid uniforme
   const projects = [
     { id: cases[0].id, title: "Jornada omnichannel\nem loja", company: "Riachuelo", size: "large" as const, hasImage: true, imageSet: 1 as const },
-    { id: cases[1].id, title: "Plataforma de\nColaboração", company: "Microsoft", size: "medium" as const, hasImage: true, imageSet: 4 as const },
+    { id: cases[1].id, title: "Redesenho do\necossistema de sites", company: "Neoenergia", size: "medium" as const, hasImage: true, imageSet: 4 as const },
     { id: cases[2].id, title: "Sistema de Saúde\nAcessível", company: "Neoenergia", size: "medium" as const },
-    { id: cases[0].id, title: "Redesign de App\nFinanceiro", company: "Santander", size: "medium" as const, hasImage: true, imageSet: 2 as const },
-    { id: cases[1].id, title: "Redesign de\nPlataforma Digital", company: "Banco do Brasil", size: "tall" as const, hasImage: true, imageSet: 3 as const },
+    { id: cases[0].id, title: "Plataforma print on\ndemand em loja", company: "Riachuelo", size: "medium" as const, hasImage: true, imageSet: 2 as const },
+    { id: cases[1].id, title: "App segurança\nem praias", company: "BeachLock", size: "tall" as const, hasImage: true, imageSet: 3 as const },
     { id: cases[2].id, title: "App de Gestão\nde Energia", company: "Neoenergia", size: "tall" as const },
     { id: cases[0].id, title: "Portal de Serviços\nDigitais", company: "Riachuelo", size: "medium" as const },
   ];
