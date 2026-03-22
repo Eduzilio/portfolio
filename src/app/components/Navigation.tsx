@@ -33,12 +33,12 @@ export function Navigation() {
         borderBottom: isScrolled ? "1px solid rgba(255, 255, 255, 0.1)" : "1px solid transparent",
       }}
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4 lg:py-6">
         <div className="flex items-center justify-between">
           {/* Logo/Name */}
           <Link to="/" className="group">
             <motion.div
-              className="text-xl tracking-tight text-white"
+              className="text-base sm:text-lg lg:text-xl tracking-tight text-white"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
@@ -47,20 +47,20 @@ export function Navigation() {
           </Link>
 
           {/* Links */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-4 sm:gap-6 lg:gap-8">
             {links.map((link) => {
               const isActive = location.pathname === link.to;
               return (
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="relative text-sm text-white/70 hover:text-white transition-colors"
+                  className="relative text-xs sm:text-sm text-white/70 hover:text-white transition-colors"
                 >
                   {link.label}
                   {isActive && (
                     <motion.div
                       layoutId="activeNav"
-                      className="absolute -bottom-6 left-0 right-0 h-[1px] bg-white"
+                      className="absolute -bottom-4 lg:-bottom-6 left-0 right-0 h-[1px] bg-white"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}

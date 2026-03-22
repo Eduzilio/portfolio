@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import svgPaths from "../../imports/svg-l9301e7yl1";
-import heroImage from "../../assets/e7bfdf09417b2dcf5e75af6d0f6f019b7b3eea8d.png";
+import heroImage from "figma:asset/e7bfdf09417b2dcf5e75af6d0f6f019b7b3eea8d.png";
 
 const rotatingPhrases = [
   { first: "fluxos em", last: "experiências" },
@@ -53,11 +53,11 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 sm:px-8 py-20 pt-28">
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 lg:px-8 py-16 pt-20 lg:py-20 lg:pt-28">
         <div className="max-w-3xl">
           {/* Subtitle */}
           <motion.div
-            className="mb-5 text-sm tracking-[1.4px] uppercase text-[#f5dcba]"
+            className="mb-4 lg:mb-5 text-xs lg:text-sm tracking-[1.2px] lg:tracking-[1.4px] uppercase text-[#f5dcba]"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,7 +66,7 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main Title with Rotating Words */}
-          <div className="text-4xl sm:text-5xl lg:text-6xl xl:text-[72px] tracking-[-0.035em] leading-[1.1] mb-8">
+          <div className="text-[32px] sm:text-4xl lg:text-5xl xl:text-[72px] tracking-[-0.035em] leading-[1.1] mb-6 lg:mb-8">
             <motion.div
               className="font-light text-[#fafafa]"
               initial={{ opacity: 0, y: 20 }}
@@ -96,7 +96,7 @@ export function HeroSection() {
 
           {/* Description */}
           <motion.p
-            className="text-base sm:text-lg lg:text-xl text-white leading-relaxed max-w-xl"
+            className="text-sm sm:text-base lg:text-lg xl:text-xl text-white leading-relaxed max-w-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -109,14 +109,14 @@ export function HeroSection() {
       {/* Scroll Down Indicator */}
       <motion.button
         onClick={scrollToContent}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 z-30 cursor-pointer hover:opacity-70 transition-opacity"
+        className="absolute bottom-8 lg:bottom-12 left-1/2 -translate-x-1/2 z-30 cursor-pointer hover:opacity-70 transition-opacity"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
         whileHover={{ y: 5 }}
         aria-label="Scroll to content"
       >
-        <svg className="w-10 h-10" fill="none" preserveAspectRatio="none" viewBox="0 0 40 40">
+        <svg className="w-8 h-8 lg:w-10 lg:h-10" fill="none" preserveAspectRatio="none" viewBox="0 0 40 40">
           <path d={svgPaths.pe1c6300} fill="white" />
         </svg>
       </motion.button>

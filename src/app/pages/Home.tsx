@@ -5,6 +5,7 @@ import { Navigation } from "../components/Navigation";
 import { HeroSection } from "../components/HeroSection";
 import { CompaniesSection } from "../components/CompaniesSection";
 import { ProjectsGrid } from "../components/ProjectsGrid";
+import { SkillsAccordion } from "../components/SkillsAccordion";
 
 export function Home() {
   const { scrollY } = useScroll();
@@ -30,16 +31,19 @@ export function Home() {
 
       {/* Projects Grid */}
       <div className="relative z-10">
-        <section className="max-w-7xl mx-auto px-6 sm:px-8 pb-32 pt-16">
+        <section className="max-w-7xl mx-auto pb-20 sm:pb-28 lg:pb-32 pt-12 sm:pt-14 lg:pt-16">
           <ProjectsGrid />
         </section>
+
+        {/* Skills Accordion Section */}
+        <SkillsAccordion />
 
         {/* Companies Section */}
         <CompaniesSection />
       </div>
 
       {/* CTA Section */}
-      <section className="max-w-7xl mx-auto px-6 sm:px-12 py-32 border-t border-border/50">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 py-20 sm:py-24 lg:py-32 border-t border-border/50">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,15 +51,15 @@ export function Home() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <h2 className="text-4xl sm:text-5xl tracking-tight mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-tight mb-4 lg:mb-6">
             Vamos criar algo incrível juntos?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-6 lg:mb-8">
             Estou sempre aberto a conversar sobre novos desafios e oportunidades de colaboração.
           </p>
           <Link
             to="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background hover:bg-foreground/90 transition-colors rounded-xl shadow-lg shadow-foreground/10"
+            className="inline-flex items-center gap-2 px-5 py-2.5 lg:px-6 lg:py-3 bg-foreground text-background hover:bg-foreground/90 transition-colors rounded-xl shadow-lg shadow-foreground/10 text-sm lg:text-base"
           >
             <span>Entre em contato</span>
             <ArrowUpRight className="w-4 h-4" />
@@ -64,12 +68,12 @@ export function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="max-w-7xl mx-auto px-6 sm:px-12 py-12 border-t border-border/50">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 text-sm text-muted-foreground">
+      <footer className="max-w-7xl mx-auto px-6 lg:px-12 py-8 sm:py-10 lg:py-12 border-t border-border/50">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-6 text-xs sm:text-sm text-muted-foreground">
           <div>
             <p>© 2026 Seu Nome. Todos os direitos reservados.</p>
           </div>
-          <div className="flex gap-6">
+          <div className="flex gap-4 sm:gap-6">
             <a href="https://linkedin.com" className="hover:text-foreground transition-colors">
               LinkedIn
             </a>

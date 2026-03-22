@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import svgPaths from "../../imports/svg-tjvdcu65zc";
-import companiesBackground from "../../assets/011a40225988e78f567a52ec9f1453d345366db1.png";
+import companiesBackground from "figma:asset/011a40225988e78f567a52ec9f1453d345366db1.png";
 
 // Logo Components from Figma - Equalized sizes
 function LogoMidway() {
@@ -140,7 +140,7 @@ export function CompaniesSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16">
+    <section className="relative overflow-hidden py-10 sm:py-12 lg:py-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -152,20 +152,20 @@ export function CompaniesSection() {
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mb-10"
+          className="mb-8 lg:mb-10"
         >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-end">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-white leading-tight">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12 items-end">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-light tracking-tight text-white leading-tight">
               Empresas com<br />quem já trabalhei
             </h2>
-            <p className="text-white/70 text-sm leading-relaxed">
+            <p className="text-white/70 text-xs sm:text-sm leading-relaxed">
               Experiência colaborando com times multidisciplinares na construção e melhoria de produtos digitais, lidando com contextos complexos, restrições reais e objetivos de negócio.
             </p>
           </div>
@@ -173,13 +173,13 @@ export function CompaniesSection() {
       </div>
 
       {/* Infinite Scrolling Logos - Full Width */}
-      <div className="relative overflow-hidden mb-10">
-        <div className="flex gap-6 animate-scroll">
+      <div className="relative overflow-hidden mb-8 lg:mb-10">
+        <div className="flex gap-4 lg:gap-6 animate-scroll">
           {/* First set of logos */}
           {logos.map(({ Component, name }, index) => (
             <div
               key={`logo-1-${index}`}
-              className="flex-shrink-0 flex items-center justify-center h-20 w-48 border border-white/15 rounded-full bg-white/5 backdrop-blur-sm"
+              className="flex-shrink-0 flex items-center justify-center h-16 w-40 lg:h-20 lg:w-48 border border-white/15 rounded-full bg-white/5 backdrop-blur-sm"
             >
               <Component />
             </div>
@@ -188,7 +188,7 @@ export function CompaniesSection() {
           {logos.map(({ Component, name }, index) => (
             <div
               key={`logo-2-${index}`}
-              className="flex-shrink-0 flex items-center justify-center h-20 w-48 border border-white/15 rounded-full bg-white/5 backdrop-blur-sm"
+              className="flex-shrink-0 flex items-center justify-center h-16 w-40 lg:h-20 lg:w-48 border border-white/15 rounded-full bg-white/5 backdrop-blur-sm"
             >
               <Component />
             </div>
