@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import svgPaths from "../../imports/svg-l9301e7yl1";
-import heroImage from "figma:asset/e7bfdf09417b2dcf5e75af6d0f6f019b7b3eea8d.png";
+import heroImage from "/images/hero.png";
 
 const rotatingPhrases = [
   { first: "fluxos em", last: "experiências" },

@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
 import svgPaths from "../../imports/svg-06qu19s9uc";
 import { cases } from "../data/cases";
-import gridDefaultImage from "figma:asset/f9353f8aa816a22361946d8f1b96277a66afbcf8.png";
-import gridHoverImage from "figma:asset/d506bc31082382879c40043bc25b5d5cb16afc03.png";
-import gridDefaultImage2 from "figma:asset/c2b28b048e1fbcdb781558920dcf563bb87df4a2.png";
-import gridHoverImage2 from "figma:asset/095c67dd91defad371542c8285ba8bcdd816cdec.png";
-import gridDefaultImage3 from "figma:asset/ab9446151e3144a924419f07e2526f3ab7b7355e.png";
-import gridHoverImage3 from "figma:asset/37316a980dae617ce7064924d5c3619738c78f72.png";
-import gridDefaultImage4 from "figma:asset/42a6f459755232eef491e6972b1f68ff6e5583a1.png";
-import gridHoverImage4 from "figma:asset/2b7b47aec7966ac322519af822d30b6aa60b5d57.png";
+import gridDefaultImage from "/images/estore-default.png";
+import gridHoverImage from "/images/estore-hover.png";
+import gridDefaultImage2 from "/images/riachueloplus-default.png";
+import gridHoverImage2 from "/images/riachueloplus-hover.png";
+import gridDefaultImage3 from "/images/beacklock-default.png";
+import gridHoverImage3 from "/images/beacklock-hover.png";
+import gridDefaultImage4 from "/images/neoenergia-default.png";
+import gridHoverImage4 from "/images/neoenergia-hover.png";
 
 interface ProjectCardProps {
   id: string;
