@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 import { useState, useEffect, useRef } from "react";
 import svgPaths from "../../imports/svg-06qu19s9uc";
 import { cases } from "../data/cases";
-const gridDefaultImage from "/images/estore-default.png";
-const gridHoverImage from "/images/estore-hover.png";
-const gridDefaultImage2 from "/images/riachueloplus-default.png";
-const gridHoverImage2 from "/images/riachueloplus-hover.png";
-const gridDefaultImage3 from "/images/beacklock-default.png";
-const gridHoverImage3 from "/images/beacklock-hover.png";
-const gridDefaultImage4 from "/images/neoenergia-default.png";
-const gridHoverImage4 from "/images/neoenergia-hover.png";
+const gridDefaultImage = "/images/estore-default.png";
+const gridHoverImage = "/images/estore-hover.png";
+const gridDefaultImage2 = "/images/riachueloplus-default.png";
+const gridHoverImage2 = "/images/riachueloplus-hover.png";
+const gridDefaultImage3 = "/images/beacklock-default.png";
+const gridHoverImage3 = "/images/beacklock-hover.png";
+const gridDefaultImage4 = "/images/neoenergia-default.png";
+const gridHoverImage4 = "/images/neoenergia-hover.png";
 
 interface ProjectCardProps {
   id: string;
